@@ -1,7 +1,7 @@
 {
   "name": "ember-scrolled-to",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "An Ember mixin for one-time scroll events.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": "https://github.com/w-hat/ember-scrolled-to",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Gregory Clark",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
