@@ -1,12 +1,39 @@
-# Ember-scrolled-to
+# ember-scrolled-to
 
-This README outlines the details of collaborating on this Ember addon.
+This addon provides a mixin for calling an arbitrary function a single time
+when a component is scrolled to.
+
+## Alternatives
+
+Note that [ember-in-viewport](https://github.com/dockyard/ember-in-viewport) is
+a more mature and featureful Ember addon which does roughly the same thing.
+Non-Ember alternatives include [scrollin](https://github.com/samccone/scrollin)
+and [scrollmonitor](https://github.com/stutrek/scrollMonitor).
+
+## Usage
+
+The callback could be used to lazy-load images of artificially-flavored snacks
+or to kick off an animation of an apple being sliced into eight pieces.
+The possibilities are endless!
+
+```js
+import Ember from 'ember';
+import ScrolledTo from 'ember-scrolled-to'
+
+export default Ember.Component.extend(ScrolledTo, {
+  scrolledTo() {
+    // Your code goes here.  For example:
+    this.set('classNames', ['cornucopia']);
+  },
+});
+```
+
+Clearly this addon should have been named `ember-fruit-scroll-up`.
 
 ## Installation
 
 * `git clone` this repository
 * `npm install`
-* `bower install`
 
 ## Running
 
