@@ -18,7 +18,7 @@ The possibilities are endless!
 
 ```js
 import Ember from 'ember';
-import ScrolledTo from 'ember-scrolled-to'
+import ScrolledTo from 'ember-scrolled-to';
 
 export default Ember.Component.extend(ScrolledTo, {
   scrolledTo() {
@@ -34,6 +34,7 @@ Clearly this addon should have been named `ember-fruit-scroll-up`.
 
 * `git clone` this repository
 * `npm install`
+* `bower install`
 
 ## Running
 

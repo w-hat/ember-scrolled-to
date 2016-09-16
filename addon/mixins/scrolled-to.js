@@ -11,11 +11,12 @@ export default Ember.Mixin.create({
       // TODO Unbind onScroll when 'willDestroyElement' is fired instead.
       if (self.get('isDestroyed') || self.get('isDestroying')) {
         Ember.$(window).unbind('scroll', onScroll);
-      } else {
+      } else if (self.$) {
 		    let selfY = self.$().offset().top - Ember.$(window).height();
 		    let pageY = event.originalEvent.pageY;
 		    // TODO Add adjustment parameter to fire the callback earlier or later.
 		    // TODO Test if the component is above the current viewport.
+		    // TODO Use getBoundingClientRect
 		    if (pageY > selfY) {
 		      self.get('scrolledTo').call(self);
           Ember.$(window).unbind('scroll', onScroll);
