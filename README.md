@@ -32,18 +32,19 @@ Clearly this addon should have been named `ember-fruit-scroll-up`.
 
 ## Installation
 
-* `git clone` this repository
+* `git clone https://github.com/w-hat/ember-scrolled-to`
+* `cd ember-scrolled-to`
 * `npm install`
 * `bower install`
 
 ## Running
 
 * `ember serve`
-* Visit your app at http://localhost:4200.
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ## Running Tests
 
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
