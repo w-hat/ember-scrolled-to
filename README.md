@@ -1,5 +1,7 @@
 # ember-scrolled-to
 
+[![Build Status](https://travis-ci.org/w-hat/ember-scrolled-to.svg?branch=master)](https://travis-ci.org/w-hat/ember-scrolled-to)
+
 This addon provides a mixin for calling an arbitrary function a single time
 when a component is scrolled to.
 
